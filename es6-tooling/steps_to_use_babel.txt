@@ -1,0 +1,32 @@
+Steps:
+1. Initialize the project with below command,
+	npm init --yes : Creates a package.json in our project 
+
+	Note: npm init command will create package.json file in our project
+
+2. Install babel as a development dependency with below command,
+	npm i babel-cli@6.26.0 babel-core@6.26.0 babel-preset-env@1.6.1 --save-dev
+
+	Note: 1. That means we won't be supplying that into our production
+      	      2. Go to the project directory from command prompt of your computer
+                   E:
+                   cd es6-tooling
+
+	package.lock.json - It's internally used by npm
+	Babel-cli is a command line interface which we run from command line. We'll give it the name of javascript file and it will convert or compile that javascript code.
+	Babel-core is basically a core of babel where all the logic for transpiling code is implemented.
+	Babel-preset : Is a combination of all the new javascript features plugin
+
+3. Create a javascript file with some es 6 style of code
+
+4. Change package.json scripts section to add babel command as below
+	"scripts": {
+		"babel": "babel --presets env index.js -o build/index.js"
+	}
+
+	Note: 
+	1. Here, we're saying put all the transpiled code inside build directory of project
+	2. Create build directory in your project
+
+5. Run below command to transpile the code,
+	npm run babel
