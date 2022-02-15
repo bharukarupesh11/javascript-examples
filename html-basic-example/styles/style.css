@@ -1,0 +1,59 @@
+/*
+    Below is a universal selector which applies to the 
+    entire document
+*/
+*{
+    margin: 0;
+}
+/*
+   Below is a type of Element Selector which will affect all the
+   HTML elements of the specified type.
+*/
+html {
+    font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FF1000;
+}
+
+body {
+    background-color: #FF9500;
+    width: 800px;
+    margin: 20px auto; /* The first value affects the elements top and bottom side; the second value affects the left and right side. (Here, auto is a special value that divides the available horizontal space evenly between left and right. */
+    padding: 20px 20px 20px 20px; /* The goal is to put some space around the content. The values set top, right, bottom, left in that order. */
+    border: 5px solid black;
+}
+
+h1{
+    margin: 0;
+    padding: 20px 0;
+    font-size: 60px;
+    text-align: center;
+    color: #FF1000;;
+    text-shadow: 3px 3px 1px black;
+}
+
+/*
+    The <body> is a block element, meaning it takes up space on the page. A block element can have 
+    margin and other spacing values applied to it. In contrast, images are inline elements. It is not 
+    possible to apply margin or spacing values to inline elements. So to apply margins to the image, 
+    we must give the image block-level behavior using "display: block;".
+*/
+img {
+    /* 
+        The display CSS property sets whether an element is treated as a block or inline 
+        element.
+
+        The value block generates a block element box, generating line breaks both before and after
+        the element when in the normal flow.
+    */
+    display: block; 
+    margin: 0 auto;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    width: 800px;
+    margin-left: 30px;
+}
