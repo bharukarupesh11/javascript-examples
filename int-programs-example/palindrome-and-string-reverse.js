@@ -1,3 +1,8 @@
+/** 
+ * Palindrome String: 
+ * A string is called a palindrome string if the reverse of that string is the same as the original string. 
+ * */
+
 let val = "dad";
 
 let splitString = val.split(""); // returns an array ["d", "a", "d"]
