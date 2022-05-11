@@ -1,15 +1,17 @@
-// Problem
+// Problem: this will point to global window object, So how to change it's reference to our object?
 function playVideo(a, b) {
-    console.log(this); // this will point to global window object, So how to change it's reference to our object?
+    console.log(this, a, b); 
 }
 
 // Solution: Functions are objects in javascript so look at the below methods available
 // Difference between call and apply is the way other argument need to pass
-playVideo.call({name: 'rupesh'}, 1, 2); // 'this' will point to this object now
+playVideo.call({name: 'rupesh'}, 1, 2); // 'this' will point to this object now. Output: {name: 'rupesh'}, 1, 2
+
 // OR
-playVideo.apply({name: 'rupesh'}, [1, 2]);
-// OR
-let fun = playVideo.bind({name: 'Rupesh'}); // crates a new function and return it same as we write a function
+playVideo.apply({name: 'rupesh'}, [1, 2]); //Output: {name: 'rupesh'}, 1, 2
+
+// OR  bind() crates a new function and return it same as we write a function
+let fun = playVideo.bind({name: 'Rupesh'}); //Output: {name: 'rupesh'}, undefined, undefined
 fun();
 
 
