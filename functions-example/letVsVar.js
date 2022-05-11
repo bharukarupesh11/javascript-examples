@@ -6,9 +6,9 @@
 // ES6 (ES 2015): let, const => block-scoped
 function start(){
     for(var i = 0; i < 5; i++){
-        console.log(i);
+        console.log(i); //Output: 0,1,2,3,4
     }
-    console.log(i); //accessible here 
+    console.log(i); // 'i' isaccessible here. Output: 5
 }
 
 start();
