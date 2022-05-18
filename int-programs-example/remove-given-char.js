@@ -2,7 +2,7 @@
 
 removeChar = (str, char) => {
     const arr = str.split("");
-    const filteredArr = arr.filter(e => e !== char);
+    const filteredArr = arr.filter(e => e !== char); // returns filtered array
     
     return filteredArr.join("");
 }

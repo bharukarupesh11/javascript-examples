@@ -13,7 +13,6 @@ getMapOfString = (str) => {
 
 getMaxOccuringChar = (str) => {
     const obj = getMapOfString(str);
-    console.log(obj);
     let max = 1;
     let char = str[0];
 

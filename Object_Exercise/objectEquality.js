@@ -3,9 +3,9 @@ let address1 = new Address('MG Road', 'Pune', '234123');
 let address2 = new Address('High Street', 'Mumbai', '234123');
 let address3 = address1;
 
-console.log(areEqual(address1, address2));
-console.log(areSame(address1, address2));
-console.log(areSame(address1, address3));
+console.log(areEqual(address1, address2)); // true : Because keys of both the objects are same
+console.log(areSame(address1, address2)); // false : Because here we're checking reference of both the objects
+console.log(areSame(address1, address3)); // true: Because addr1 and addr2 both are pointing to the same obj
 
 
 // Constructor Function(pascal notation) : To create address object

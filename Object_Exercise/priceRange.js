@@ -6,3 +6,4 @@ let priceRange = [
 ];
 
 let restaurants = [ {averagePerPerson: 5}]; // filter the list of restaurants that are average in price per person
+console.log(restaurants);

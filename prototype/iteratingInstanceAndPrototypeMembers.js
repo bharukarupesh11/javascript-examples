@@ -19,11 +19,11 @@ Circle.prototype.draw = function() {
 const c1 = new Circle(5);
 
 // Objects.keys() returns instance members
-console.log(Object.keys(c1));
+console.log(Object.keys(c1)); // Output: ['radius', 'move']
 
 // for-in loop returns all memberes (instance + prototype)
 for (let key in c1) 
-    console.log(key);
+    console.log(key); // Output: radius, move, draw
 
 console.log(c1.hasOwnProperty('radius')); // true because radius is a instance property which is directly available to c1
 console.log(c1.hasOwnProperty('draw')); // false because draw is a prototypical property which is indirectly available to c1
